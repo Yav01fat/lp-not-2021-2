@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>
+        Entrada e Saída
+     </title>
+     <script>
+     //Obtendo uma informação do usuário, entrada
+     // Colocar funçao Number, para converter para número, pois tudo
+     // O que vem do prompt é string. 
+     // LETRAS MAÍUSCULAS E MÍNUSCULAS TEM DIFERENÇA.
+     // Variavel que está fora de tudo, ela é global, se estiver dentro de um
+     // ela é Local.
+     //Var não respeita os blocos, com let é masi seguro, pois não perde as
+     //variaveis. 
+
+     let num1 = Number(prompt("Informe um número"))
+     let num2 = Number(prompt("Informe outro número"))
+
+     // Precisa-se colocar condições, pois nem todo usuário digitará
+     // números válidos, e pode dar NaN.
+
+     if(isNaN(num1)) {
+     alert("ERRO! O  PRIMEIRO valor informado não é um número válido")
+     }
+
+     else if(isNaN(num2)) {
+     alert("ERRO! O SEGUNDO valor informado não é um número válido")
+     }
+
+     // Vai aparecer o resultado da soma, somente se os dois números estiverem
+     //OK
+     // Exibindo as infomações para o usuário, saída.
+     // String vazia o JS interpreta como 0, converte para o 0
+     else {
+     let soma = num1 + num2 
+     alert('A soma dos dois números é: ' + soma)
+     }
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>
