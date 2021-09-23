@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 </title>
+        <script> 
+        let num1 = Number(prompt('Informe o primeiro número'))
+        let num2  = parseFloat(prompt("Informe o segundo número"))
+        let oper = prompt('Informe um operador ( + - * X x / : ')
+        
+            
+        if(isNanN(num1) || isNaN(num2)) {
+            alert("ERRO!INFORME NÚMEROS QUE SEJAM VÁIDOS:")
+        }
+        
+        else {
+            switch(oper) {
+            case '+':
+                document.write(num1 + num2)
+                 break
+            case "-":
+                document.write(num1 - num2)
+                 break
+            case '*': // Case vazio
+            case 'X':
+            case 'x':
+                document.write(num1 * num2)
+                 break
+            case '/':
+            case ':': 
+                document.write(num1 / num2)
+                break 
+            
+            default: // Else do swtich
+                alert('ERRO!OPERADOR INVÁLIDO')
+            }
+        }
+
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>
