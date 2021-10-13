@@ -7,41 +7,51 @@
     <title>Execicio03</title>
     <script>
 
+        //  Entrada de dados, número 1, número 2 e o operador
         let num1 = Number(prompt("Digite o primeiro número :"))
         let num2 = Number(prompt("Digite o segundo número : "))
         let ope = prompt("Informe a operação que deseja fazer (+, -, *, /)")
         let result 
         
+        //Testa se o primeiro número é válido
         if(isNaN(num1))
         
         {
             alert("ERRO: O valor informado não é um número")
         }
 
+         // Testa se o segundo número é valido
        else if(isNaN(num2)) 
         {
             alert("ERRO: O valor informado não é um número")
         }
-
+         // Caso usuário escolha a soma
         else if (ope === "+") 
 
         {
             result  = num1 + num2 
             document.write( "A soma dos dois números é :" + result)
         }
-
+          // Caso usuário escolha a subtração 
         else if(ope === "-") 
         {
             result  = num1 - num2 
             document.write( "O resultado da  subtração é :" + result)
         }
 
+         // Caso usuário escolha a multiplicação
         else if(ope === "*") 
         {
             result  = num1 * num2 
             document.write( " O resultado da multiplicação  é :" + result)
         }
+            // Caso usuário escolha a divisão
+        else if ( ope === "/"){
+            result = num1 / num2
+            document.write( "O resultado da divisão é : " + result )
+        } 
 
+         // Se o operador for inválido. 
         else {
             alert("ERRO! OPERADOR INVÁLIDO!")
         }
