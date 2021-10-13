@@ -9,6 +9,7 @@
         let num1 = Number(prompt('Informe o primeiro número'))
         let num2  = parseFloat(prompt("Informe o segundo número"))
         let oper = prompt('Informe um operador ( + - * X x / : ')
+        let resultado 
         
             
         if(isNanN(num1) || isNaN(num2)) {
@@ -18,19 +19,19 @@
         else {
             switch(oper) {
             case '+':
-                document.write(num1 + num2)
+              resultado =  num1 + num2
                  break
             case "-":
-                document.write(num1 - num2)
+               resultado = num1 - num2
                  break
             case '*': // Case vazio
             case 'X':
             case 'x':
-                document.write(num1 * num2)
+               resultado = num1 * num2
                  break
             case '/':
             case ':': 
-                document.write(num1 / num2)
+               resultado = num1 / num2
                 break 
             
             default: // Else do swtich
@@ -38,6 +39,14 @@
             }
         }
 
+        //document.write(num1 + ' ' + oper + ' ' + num2 + ' é igual a' + resultado)
+        // STRING TAMPLATES
+        if(resultado !== undefined) {
+        document.write(`${num1} ${oper} ${num2} é igual a ${resultado}`)
+        }
+        
+
+    
         </script>
 
 </head>
